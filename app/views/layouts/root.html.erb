@@ -1,0 +1,12 @@
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+<% if logged_in? %>
+
+  <script type="text/javascript">
+    window.currentUser = 
+    <%= render("api/users/user.json.jbuilder", user: current_user).html_safe %>
+  </script>
+<% end %>
+
+<div id="root">react is not working</div>
